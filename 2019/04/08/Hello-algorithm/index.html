@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>dfs eg1 · smq&#39;s Space</title>
+    <title>Hello,algorithm! · smq&#39;s Space</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">smq&#39;s Space.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">dfs eg1</a>
+                <a href="#" class="post-name">Hello,algorithm!</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            dfs eg1
+            Hello,algorithm!
             <!-- 404 -->
             
         </h1>
@@ -264,20 +264,14 @@ height:50vh;
             <div class="post-intros">
                 <!-- 文章页标签  -->
                 
-                    <div class="post-intro-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="algorithm">algorithm</a>
-    
-</div>
-                
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">222</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">135</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/03/23</span>
+                    <span class="post-intro-time">2019/04/08</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -401,64 +395,9 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="算法鸭"><a href="#算法鸭" class="headerlink" title="算法鸭"></a>算法鸭</h1><pre><code>#include &lt;iostream&gt;
-
-using namespace std;
-
-int num[100000];
-int k=0;
-int mov[4][2]={{1,0},{0,1},{-1,0},{0,-1}};
-int a[10];
-int map[10][10];
-
-void dfs(int x,int y,int z);//x.y为横纵坐标,z为层数
-
-int main(){
-    for (int i=0; i&lt;5; i++) {
-        for (int j=0; j&lt;5; j++) {
-            cin&gt;&gt;map[i][j];
-        }
-        }
-            for (int i=0; i&lt;5 ; i++) {
-            for (int j=0; j&lt;5; j++) {
-            a[0] = map[i][j];
-            dfs(i, j, 1);
-            }
-            }
-        cout&lt;&lt;k&lt;&lt;endl;
-        return 0;
-    }
-
-void dfs(int x,int y,int z){
-    if(z==6){
-        int testnum = a[0]*100000+a[1]*10000+a[2]*1000+a[3]*100+a[4]*10+a[5];
-        if(k==0){
-            num[k++]=testnum;
-            }   
-        else{
-            int flag=1;
-            for (int i=0; i&lt;k; i++) {
-            if(num[i] == testnum){
-            flag = 0;
-            break;
-                }
-            }
-        if(flag)
-            num[k++] = testnum;
-        }
-
-   return;
-    }
-    for (int i=0; i&lt;4; i++) {
-        int cx = x+mov[i][0];
-        int cy = y+mov[i][1];
-        if(cx&gt;=0&amp;&amp;cx&lt;5&amp;&amp;cy&gt;=0&amp;&amp;cy&lt;5){
-            a[z]=map[cx][cy];
-            dfs(cx, cy, z+1);
-        }
-    }
-}
-</code></pre>
+        <h1 id="心心念念的博客终于基本上弄好了"><a href="#心心念念的博客终于基本上弄好了" class="headerlink" title="心心念念的博客终于基本上弄好了"></a>心心念念的博客终于基本上弄好了</h1><p>  早就想做一个属于自己的博客，可以在这上面写一些自己的东西，可以把自己的一些想法写下来，可以分享（划掉）记录一些东西，特别是学习算法，对算法的总结，这条路真的好长啊，但是真的要坚持下去。记得myq有一条说说是：“你凭什么不努力，又什么都想要？”<br>  希望我能够付出更多，获得更多…</p>
+<p>Finally，</p>
+<h1 id="Hello，algorithm！"><a href="#Hello，algorithm！" class="headerlink" title="Hello，algorithm！"></a>Hello，algorithm！</h1>
     </article>
     <!-- license  -->
     
@@ -466,17 +405,12 @@ void dfs(int x,int y,int z){
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/04/08/Hello-algorithm/" title="Hello,algorithm!">
-                    <div class="nextTitle">Hello,algorithm!</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/03/21/new start/" title="new start">
-                    <div class="prevTitle">new start</div>
+                <a href="/2019/03/23/dfs eg1/" title="dfs eg1">
+                    <div class="prevTitle">dfs eg1</div>
                 </a>
             
         </li>
@@ -602,7 +536,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#算法鸭"><span class="toc-number">1.</span> <span class="toc-text">算法鸭</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#心心念念的博客终于基本上弄好了"><span class="toc-number">1.</span> <span class="toc-text">心心念念的博客终于基本上弄好了</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hello，algorithm！"><span class="toc-number">2.</span> <span class="toc-text">Hello，algorithm！</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
