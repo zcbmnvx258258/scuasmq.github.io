@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>smq&#39;s Space</title>
+    <title>dfs eg1 · smq&#39;s Space</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">smq&#39;s Space.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">dfs eg1</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">smq's Space.</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            dfs eg1
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="algorithm">algorithm</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">222</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/03/23</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,20 +399,9 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/23/dfs eg1/">
-            
-                <span>dfs eg1</span>
-        </a>
-        <div class="abstract-content">
-            算法鸭#include &lt;iostream&gt;
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="算法鸭"><a href="#算法鸭" class="headerlink" title="算法鸭"></a>算法鸭</h1><pre><code>#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -366,26 +416,80 @@ void dfs(int x,int y,int z);//x.y为横纵坐标,z为层数
 int main(){
     for (int i=0; i&lt;5; i++) {
         for (int j=0; j&lt;5; j++) {
-            cin&gt;&...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="algorithm">algorithm</a>
-    
-</div>
-            
-        </div>
+            cin&gt;&gt;map[i][j];
+        }
+        }
+            for (int i=0; i&lt;5 ; i++) {
+            for (int j=0; j&lt;5; j++) {
+            a[0] = map[i][j];
+            dfs(i, j, 1);
+            }
+            }
+        cout&lt;&lt;k&lt;&lt;endl;
+        return 0;
+    }
+
+void dfs(int x,int y,int z){
+    if(z==6){
+        int testnum = a[0]*100000+a[1]*10000+a[2]*1000+a[3]*100+a[4]*10+a[5];
+        if(k==0){
+            num[k++]=testnum;
+            }   
+        else{
+            int flag=1;
+            for (int i=0; i&lt;k; i++) {
+            if(num[i] == testnum){
+            flag = 0;
+            break;
+                }
+            }
+        if(flag)
+            num[k++] = testnum;
+        }
+
+   return;
+    }
+    for (int i=0; i&lt;4; i++) {
+        int cx = x+mov[i][0];
+        int cy = y+mov[i][1];
+        if(cx&gt;=0&amp;&amp;cx&lt;5&amp;&amp;cy&gt;=0&amp;&amp;cy&lt;5){
+            a[z]=map[cx][cy];
+            dfs(cx, cy, z+1);
+        }
+    }
+}
+</code></pre>
     </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/03/21/new start/" title="new start">
+                    <div class="prevTitle">new start</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -477,6 +581,24 @@ int main(){
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#算法鸭"><span class="toc-number">1.</span> <span class="toc-text">算法鸭</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -634,6 +756,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
