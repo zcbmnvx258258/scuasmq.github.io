@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">408</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">409</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -403,20 +403,20 @@ height:50vh;
     <article class="article-entry">
         <p>#论如何在用VScode写C++的时候摸鱼</p>
 <p>###音乐可以（提升猪的肉质（划掉！ -&gt;人的工作效率，所以就想分享一个好用的VScode插件给大家  </p>
-<p>###这就是  VSC Netease Music<br>在VScode里面搜索就好了<br>图片可以点开，下面有字噢<br><img src="/2019/04/09/allabourC/install.png" alt="noi，VScode就是这样神奇，什么都能找到，写程序的人一定是996不能满足他们了TAT"><br><img src="/2019/04/09/allabourC/search.png" alt="按F1，搜索Netease Misic就好啦！"><br><img src="/2019/04/09/allabourC/play.png" alt="还可以登陆账号，和看网易云的神评论呢！！！"></p>
+<p>###这就是  VSC Netease Music</p>
+<p>在VScode里面搜索就好了<br>图片可以点开，下面有字噢<br><img src="/2019/04/09/allabourC/install.png" alt="noi，VScode就是这样神奇，什么都能找到，写程序的人一定是996不能满足他们了TAT"><br><img src="/2019/04/09/allabourC/search.png" alt="按F1，搜索Netease Misic就好啦！"><br><img src="/2019/04/09/allabourC/play.png" alt="还可以登陆账号，和看网易云的神评论呢！！！"></p>
 <p>##难道就只有这种程度了吗？当然不是！</p>
 <p>###VS Code 使用的 Electron 版本不包含 ffmpeg，需替换自带的 ffmpeg 动态链接库才能正常播放 (每次更新 VS Code 都需重新替换)</p>
 <p>###现在给出替换方法噢</p>
-<p>##手动替换<br>通过 VS Code 版本在<br><a href="https://raw.githubusercontent.com/Microsoft/vscode/%version%/.yarnrc" target="_blank" rel="noopener">这儿： https://raw.githubusercontent.com/Microsoft/vscode/%version%/.yarnrc</a><br>  查看其使用的 Electron 版本，并于 <a href="https://github.com/electron/electron/releases/tag/%version%" target="_blank" rel="noopener">https://github.com/electron/electron/releases/tag/%version%</a><br> 下载对应的 Electron 完整版本进行替换</p>
+<p>##手动替换</p>
+<p>通过 VS Code 版本在<br><a href="https://raw.githubusercontent.com/Microsoft/vscode/%version%/.yarnrc" target="_blank" rel="noopener">这儿： https://raw.githubusercontent.com/Microsoft/vscode/%version%/.yarnrc</a><br>  查看其使用的 Electron 版本，并于 <a href="https://github.com/electron/electron/releases/tag/%version%" target="_blank" rel="noopener">https://github.com/electron/electron/releases/tag/%version%</a><br> 下载对应的 Electron 完整版本进行替换</p>
 <p>###Windows<br>下载 electron-%version%-win32-%arch%.zip<br>替换 ./ffmpeg.dll</p>
 <p>###macOS<br>下载 electron-%version%-darwin-x64.zip<br>替换 ./Electron.app/Contents/Frameworks/Electron\ Framework.framework/Libraries/libffmpeg.dylib</p>
 <p>###Linux<br>下载 electron-%version%-linux-%arch%.zip<br>替换 ./libffmpeg.so</p>
 <p>##自动替换<br>使用 Python 脚本替换 (Python 2/3 均可，绝大部分发行版自带环境)<br>默认安装位置下 Linux 和 Windows 需要以管理员身份运行，macOS 不需要</p>
-<p>###Windows Powershell</p>
-<pre><code>Invoke-RestMethod https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw | python
-</code></pre><p>###Unix Shell</p>
-<pre><code>curl https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw | python
-</code></pre><p>如果 VS Code 使用默认配置安装，脚本会自动寻找并替换，若自定义了安装位置，请自行修改 installation</p>
+<p>###Windows Powershell<br>    Invoke-RestMethod <a href="https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw" target="_blank" rel="noopener">https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw</a> | python</p>
+<p>###Unix Shell<br>    curl <a href="https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw" target="_blank" rel="noopener">https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw</a> | python</p>
+<p>如果 VS Code 使用默认配置安装，脚本会自动寻找并替换，若自定义了安装位置，请自行修改 installation</p>
 <p><a href="https://github.com/nondanee/vsc-netease-music" target="_blank" rel="noopener">这儿是作者程序的github地址，Github上面有很多好玩的东西，有句话说得好，不要重复造轮子，这很好体现了C++面向对象的思想（拿来直接用）（强行扣题（逃      <em>(°:з」∠)</em>  </a><br></p>
 
     </article>
