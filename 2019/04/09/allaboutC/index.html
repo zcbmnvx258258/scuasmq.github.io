@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Find&amp;Union · smq&#39;s Space</title>
+    <title>allaboutC++ · smq&#39;s Space</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">smq&#39;s Space.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Find&Union</a>
+                <a href="#" class="post-name">allaboutC++</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Find&Union
+            allaboutC++
             <!-- 404 -->
             
         </h1>
@@ -266,13 +266,13 @@ height:50vh;
                 
                     <div class="post-intro-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="algorithm">algorithm</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="C++">C++</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">6</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">406</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,7 +401,16 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>#并查集<br>to be continued…</p>
+        <h1 id="论如何在用VScode写C-的时候摸鱼"><a href="#论如何在用VScode写C-的时候摸鱼" class="headerlink" title="论如何在用VScode写C++的时候摸鱼"></a>论如何在用VScode写C++的时候摸鱼</h1><h3 id="音乐可以（提升猪的肉质（划掉！-gt-人的工作效率，所以就想分享一个好用的VScode插件给大家"><a href="#音乐可以（提升猪的肉质（划掉！-gt-人的工作效率，所以就想分享一个好用的VScode插件给大家" class="headerlink" title="音乐可以（提升猪的肉质（划掉！ -&gt;人的工作效率，所以就想分享一个好用的VScode插件给大家"></a>音乐可以（提升猪的肉质（划掉！ -&gt;人的工作效率，所以就想分享一个好用的VScode插件给大家</h3><h3 id="这就是-VSC-Netease-Music"><a href="#这就是-VSC-Netease-Music" class="headerlink" title="这就是  VSC Netease Music"></a>这就是  VSC Netease Music</h3><p>在VScode里面搜索就好了<br>图片可以点开，下面有字噢<br><img src="/2019/04/09/allaboutC/install.png" alt="noi，VScode就是这样神奇，什么都能找到，写程序的人一定是996不能满足他们了TAT"><br><img src="/2019/04/09/allaboutC/search.png" alt="按F1，搜索Netease Misic就好啦！"><br><img src="/2019/04/09/allaboutC/play.png" alt="还可以登陆账号，和看网易云的神评论呢！！！"></p>
+<h2 id="难道就只有这种程度了吗？当然不是！"><a href="#难道就只有这种程度了吗？当然不是！" class="headerlink" title="难道就只有这种程度了吗？当然不是！"></a>难道就只有这种程度了吗？当然不是！</h2><h3 id="VS-Code-使用的-Electron-版本不包含-ffmpeg，需替换自带的-ffmpeg-动态链接库才能正常播放-每次更新-VS-Code-都需重新替换"><a href="#VS-Code-使用的-Electron-版本不包含-ffmpeg，需替换自带的-ffmpeg-动态链接库才能正常播放-每次更新-VS-Code-都需重新替换" class="headerlink" title="VS Code 使用的 Electron 版本不包含 ffmpeg，需替换自带的 ffmpeg 动态链接库才能正常播放 (每次更新 VS Code 都需重新替换)"></a>VS Code 使用的 Electron 版本不包含 ffmpeg，需替换自带的 ffmpeg 动态链接库才能正常播放 (每次更新 VS Code 都需重新替换)</h3><h3 id="现在给出替换方法噢"><a href="#现在给出替换方法噢" class="headerlink" title="现在给出替换方法噢"></a>现在给出替换方法噢</h3><h2 id="手动替换"><a href="#手动替换" class="headerlink" title="手动替换"></a>手动替换</h2><p>通过 VS Code 版本在<br><a href="https://raw.githubusercontent.com/Microsoft/vscode/%version%/.yarnrc" target="_blank" rel="noopener">这儿： https://raw.githubusercontent.com/Microsoft/vscode/%version%/.yarnrc</a><br>  查看其使用的 Electron 版本，并于 <a href="https://github.com/electron/electron/releases/tag/%version%" target="_blank" rel="noopener">https://github.com/electron/electron/releases/tag/%version%</a><br> 下载对应的 Electron 完整版本进行替换</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>下载 electron-%version%-win32-%arch%.zip<br>替换 ./ffmpeg.dll</p>
+<h3 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h3><p>下载 electron-%version%-darwin-x64.zip<br>替换 ./Electron.app/Contents/Frameworks/Electron\ Framework.framework/Libraries/libffmpeg.dylib</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>下载 electron-%version%-linux-%arch%.zip<br>替换 ./libffmpeg.so</p>
+<h2 id="自动替换"><a href="#自动替换" class="headerlink" title="自动替换"></a>自动替换</h2><p>使用 Python 脚本替换 (Python 2/3 均可，绝大部分发行版自带环境)<br>默认安装位置下 Linux 和 Windows 需要以管理员身份运行，macOS 不需要</p>
+<h3 id="Windows-Powershell"><a href="#Windows-Powershell" class="headerlink" title="Windows Powershell"></a>Windows Powershell</h3><pre><code>Invoke-RestMethod https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw | python
+</code></pre><h3 id="Unix-Shell"><a href="#Unix-Shell" class="headerlink" title="Unix Shell"></a>Unix Shell</h3><pre><code>curl https://gist.githubusercontent.com/nondanee/f157bbbccecfe29e48d87273cd02e213/raw | python
+</code></pre><p>如果 VS Code 使用默认配置安装，脚本会自动寻找并替换，若自定义了安装位置，请自行修改 installation</p>
+<p><a href="https://github.com/nondanee/vsc-netease-music" target="_blank" rel="noopener">这儿是作者程序的github地址，Github上面有很多好玩的东西，有句话说得好，不要重复造轮子，这很好体现了C++面向对象的思想（拿来直接用）（强行扣题（逃      <em>(°:з」∠)</em>  </a><br></p>
 
     </article>
     <!-- license  -->
@@ -410,17 +419,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/04/09/reptile-first/" title="reptile~first">
-                    <div class="nextTitle">reptile~first</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/04/08/Hello-algorithm/" title="Hello,algorithm!">
-                    <div class="prevTitle">Hello,algorithm!</div>
+                <a href="/2019/04/09/reptile-first/" title="reptile~first">
+                    <div class="prevTitle">reptile~first</div>
                 </a>
             
         </li>
@@ -546,7 +550,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#论如何在用VScode写C-的时候摸鱼"><span class="toc-number">1.</span> <span class="toc-text">论如何在用VScode写C++的时候摸鱼</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#音乐可以（提升猪的肉质（划掉！-gt-人的工作效率，所以就想分享一个好用的VScode插件给大家"><span class="toc-number">1.0.1.</span> <span class="toc-text">音乐可以（提升猪的肉质（划掉！ -&gt;人的工作效率，所以就想分享一个好用的VScode插件给大家</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这就是-VSC-Netease-Music"><span class="toc-number">1.0.2.</span> <span class="toc-text">这就是  VSC Netease Music</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#难道就只有这种程度了吗？当然不是！"><span class="toc-number">1.1.</span> <span class="toc-text">难道就只有这种程度了吗？当然不是！</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#VS-Code-使用的-Electron-版本不包含-ffmpeg，需替换自带的-ffmpeg-动态链接库才能正常播放-每次更新-VS-Code-都需重新替换"><span class="toc-number">1.1.1.</span> <span class="toc-text">VS Code 使用的 Electron 版本不包含 ffmpeg，需替换自带的 ffmpeg 动态链接库才能正常播放 (每次更新 VS Code 都需重新替换)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#现在给出替换方法噢"><span class="toc-number">1.1.2.</span> <span class="toc-text">现在给出替换方法噢</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手动替换"><span class="toc-number">1.2.</span> <span class="toc-text">手动替换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-number">1.2.1.</span> <span class="toc-text">Windows</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#macOS"><span class="toc-number">1.2.2.</span> <span class="toc-text">macOS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux"><span class="toc-number">1.2.3.</span> <span class="toc-text">Linux</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自动替换"><span class="toc-number">1.3.</span> <span class="toc-text">自动替换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Powershell"><span class="toc-number">1.3.1.</span> <span class="toc-text">Windows Powershell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unix-Shell"><span class="toc-number">1.3.2.</span> <span class="toc-text">Unix Shell</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
